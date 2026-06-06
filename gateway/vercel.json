@@ -1,0 +1,12 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"rewrites": [
+		{ "source": "/docs", "destination": "https://docs-xxx.vercel.app/" },
+		{ "source": "/docs/:path*", "destination": "https://docs-xxx.vercel.app/:path*" },
+		{ "source": "/admin", "destination": "https://admin-xxx.vercel.app/" },
+		{ "source": "/admin/:path*", "destination": "https://admin-xxx.vercel.app/:path*" },
+		{ "source": "/api/:path*", "destination": "https://api-xxx.vercel.app/:path*" },
+		{ "source": "/", "destination": "https://web-xxx.vercel.app/" },
+		{ "source": "/:path*", "destination": "https://web-xxx.vercel.app/:path*" }
+	]
+}

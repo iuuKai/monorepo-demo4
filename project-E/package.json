@@ -1,0 +1,12 @@
+{
+	"name": "project-d",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "node scripts/build.js"
+	},
+	"devDependencies": {
+		"dotenv": "^17.4.2"
+	}
+}

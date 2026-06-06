@@ -1,0 +1,22 @@
+<% const navItems = [
+  { name: 'Home', path: `${BASE_URL}`, description: '加载图片资源' },
+  { name: 'About', path: `${BASE_URL}about.html`, description: '请求主项目接口' },
+  { name: '404', path: `/404/${Date.now()}`, description: '404错误页'}
+] %>
+
+
+<% if (isBuild) { %>
+  <div class="sup-nav">
+    <a href="/">返回导航</a>
+  </div>
+<% } %>
+<div class="nav">
+  <ul>
+    <% navItems.forEach(item => { %>
+      <li class="nav-item" data-path="<%= item.path %>">
+        <button><%= item.name %></button>
+        <span><%= item.description %></span>
+      </li>
+    <% }) %>
+  </ul>
+</div>
