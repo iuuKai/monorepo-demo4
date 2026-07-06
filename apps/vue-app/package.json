@@ -1,0 +1,22 @@
+{
+	"name": "@mf/vue-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 3002",
+		"build": "vue-tsc && vite build",
+		"lint": "vue-tsc --noEmit"
+	},
+	"dependencies": {
+		"@vercel/microfrontends": "^2.3.6",
+		"@mf/shared-vue": "workspace:*",
+		"@mf/shared-utils": "workspace:*",
+		"vue": "^3.5.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.1.2",
+		"typescript": "^5.6.2",
+		"vite": "^5.4.2",
+		"vue-tsc": "^2.1.6"
+	}
+}

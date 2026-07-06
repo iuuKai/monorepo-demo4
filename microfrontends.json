@@ -1,0 +1,23 @@
+{
+	"$schema": "https://openapi.vercel.sh/microfrontends.json",
+	"applications": {
+		"nuxt-app": {
+			"packageName": "@mf/nuxt-app",
+			"development": {
+				"local": 3001,
+				"fallback": "https://example.com"
+			}
+		},
+		"vue-app": {
+			"packageName": "@mf/vue-app",
+			"routing": [
+				{
+					"paths": ["/vue/:path*"]
+				}
+			],
+			"development": {
+				"local": 3002
+			}
+		}
+	}
+}
