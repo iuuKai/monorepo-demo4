@@ -2,14 +2,12 @@
 	"$schema": "https://openapi.vercel.sh/microfrontends.json",
 	"applications": {
 		"monorepo-demo4-nuxt-app": {
-			"packageName": "@mf/nuxt-app",
 			"development": {
 				"local": 3001,
 				"fallback": "https://monorepo-demo4-nuxt-app.vercel.app"
 			}
 		},
 		"monorepo-demo4-vue-app": {
-			"packageName": "@mf/vue-app",
 			"routing": [
 				{
 					"paths": ["/vue/:path*"]
