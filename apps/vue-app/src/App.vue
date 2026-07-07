@@ -54,22 +54,6 @@
 				</template>
 			</MfCard>
 		</section>
-
-		<div class="highlight-box">
-			<span class="dot"></span>
-			<p>
-				当前应用：
-				<strong>Vue 3 SPA 子应用</strong>
-			</p>
-			<p class="small">
-				路由路径：
-				<code>/vue/*</code>
-			</p>
-			<p class="small">
-				运行端口：
-				<code>3002</code>
-			</p>
-		</div>
 	</div>
 </template>
 
@@ -176,22 +160,6 @@ const handleClick = () => {
 	border-radius: 4px;
 	font-size: 13px;
 }
-.highlight-box {
-	margin-top: 40px;
-	padding: 20px;
-	background: #e8f0fe;
-	border-radius: 12px;
-	border-left: 4px solid #1a73e8;
-}
-.highlight-box .dot {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: #1a73e8;
-	border-radius: 50%;
-	margin-right: 10px;
-	animation: pulse 2s infinite;
-}
 @keyframes pulse {
 	0%,
 	100% {
@@ -200,20 +168,5 @@ const handleClick = () => {
 	50% {
 		opacity: 0.5;
 	}
-}
-.highlight-box p {
-	margin: 0;
-	font-size: 15px;
-}
-.highlight-box .small {
-	margin-top: 4px;
-	font-size: 13px;
-	color: #666;
-}
-.highlight-box code {
-	background: rgba(255, 255, 255, 0.8);
-	padding: 1px 5px;
-	border-radius: 4px;
-	font-size: 12px;
 }
 </style>
