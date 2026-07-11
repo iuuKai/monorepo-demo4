@@ -47,7 +47,7 @@
 			</p>
 			<MfCard title="Vue 卡片" desc="和 Nuxt 主应用共用组件代码，样式完全一致">
 				<template #banner>
-					<MfImage alt="卡片 banner" width="100%" :height="200" radius="lg" />
+					<MfImage alt="卡片 banner" width="100%" :height="400" radius="lg" />
 				</template>
 				<template #button>
 					<MfButton text="Vue 子应用按钮" type="primary" @click="handleClick" />

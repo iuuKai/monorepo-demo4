@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import type { ImageProps } from '@mf/shared-utils'
-import { DEMO_IMAGE_URL } from '@mf/shared-utils'
+import { DEMO_IMAGE } from '@mf/shared-utils'
 
 const props = withDefaults(defineProps<ImageProps>(), {
 	width: 300,
@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<ImageProps>(), {
 	fit: 'cover'
 })
 
-const demoImg = DEMO_IMAGE_URL
+const demoImg = DEMO_IMAGE
 
 const formatSize = (val: string | number) => (typeof val === 'number' ? `${val}px` : val)
 </script>

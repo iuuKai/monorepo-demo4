@@ -3,8 +3,11 @@
 		<header class="hero">
 			<h1>Vercel Microfrontends + Monorepo</h1>
 			<p class="subtitle">
-				基于 <code>@vercel/microfrontends</code> 的微前端示例，Nuxt 4 为主应用，Vue3 为子应用，
-				<code>pnpm workspace</code> 管理共享组件包。
+				基于
+				<code>@vercel/microfrontends</code>
+				的微前端示例，Nuxt 4 为主应用，Vue3 为子应用，
+				<code>pnpm workspace</code>
+				管理共享组件包。
 			</p>
 		</header>
 
@@ -12,24 +15,36 @@
 			<a href="/" class="app-card app-card-active">
 				<div class="app-badge">默认应用</div>
 				<h3>Nuxt 4</h3>
-				<p>SSR / 默认路由 <code>/</code></p>
+				<p>
+					SSR / 默认路由
+					<code>/</code>
+				</p>
 			</a>
 			<a href="/vue/" class="app-card">
 				<div class="app-badge">子应用</div>
 				<h3>Vue 3 SPA</h3>
-				<p>独立部署 <code>/vue/*</code></p>
+				<p>
+					独立部署
+					<code>/vue/*</code>
+				</p>
 			</a>
 		</nav>
 
 		<section class="demo">
 			<h2>共享组件示例</h2>
 			<p class="demo-desc">
-				<code>MfCard</code> / <code>MfImage</code> / <code>MfButton</code>
-				来自 <code>packages/shared-vue</code>，Nuxt 和 Vue3 共用同一套代码。
+				<code>MfCard</code>
+				/
+				<code>MfImage</code>
+				/
+				<code>MfButton</code>
+				来自
+				<code>packages/shared-vue</code>
+				，Nuxt 和 Vue3 共用同一套代码。
 			</p>
 			<MfCard title="统一卡片组件" desc="Nuxt 主应用和 Vue 子应用都用它，样式完全一致">
 				<template #banner>
-					<MfImage alt="卡片 banner" width="100%" :height="200" radius="lg" />
+					<MfImage alt="卡片 banner" width="100%" :height="400" radius="lg" />
 				</template>
 				<template #button>
 					<MfButton text="主应用按钮" type="primary" @click="handleClick" />
@@ -52,7 +67,10 @@ const handleClick = () => {
 	padding: 48px 24px;
 	max-width: 800px;
 	margin: 0 auto;
-	font-family: system-ui, -apple-system, sans-serif;
+	font-family:
+		system-ui,
+		-apple-system,
+		sans-serif;
 }
 .hero h1 {
 	font-size: 32px;
