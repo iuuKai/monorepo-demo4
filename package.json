@@ -2,16 +2,13 @@
 	"name": "monorepo-demo4",
 	"private": true,
 	"scripts": {
-		"dev": "pnpm dev:all",
-		"dev:all": "concurrently --restart-tries 5 --restart-after 5000 -n nuxt,vue,proxy -c cyan,yellow,red \"pnpm --filter @mf/nuxt-app dev\" \"pnpm --filter @mf/vue-app dev\" \"wait-on tcp:3001 tcp:3002 && pnpm dev:proxy\"",
+		"dev": "pnpm -r dev",
 		"dev:proxy": "pnpm --filter @mf/nuxt-app exec microfrontends proxy --local-apps monorepo-demo4-nuxt-app monorepo-demo4-vue-app --port 3000",
 		"build": "pnpm -r build",
 		"lint": "pnpm -r lint",
 		"clean": "pnpm -r exec rm -rf dist node_modules .next .nuxt out"
 	},
 	"devDependencies": {
-		"concurrently": "^9.0.0",
-		"typescript": "^5.6.2",
-		"wait-on": "^9.0.10"
+		"typescript": "^5.6.2"
 	}
 }
